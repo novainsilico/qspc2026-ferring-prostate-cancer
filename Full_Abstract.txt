@@ -1,0 +1,34 @@
+Title: A Mechanistic-Statistical QSP framework of Disease Progression and Clinical Outcomes in Prostate Cancer
+
+Authors: 
+Matthias Hanke(1), Théo Plissonneau(1), Adèle Hamelin(1), Philippe Pinton(2), Maria Deryabina(2), Lars-Erik Kyhl(2), Simon Bjerregaard(2), Jonas Eildal(2), Johan Kjellstroem(2), Cristhyne Leon(1)
+1 Nova In Silico, France
+2 Ferring Pharmaceuticals, Denmark
+
+Background: Prostate cancer is the second most diagnosed malignancy in men and a leading cause of cancer-related mortality. Localized disease is often managed with radical prostatectomy and/or radiotherapy, 
+but many patients experience recurrence and require androgen deprivation therapy (ADT). We present a quantitative systems pharmacology (QSP) mechanistic–statistical framework that links pharmacodynamic (PD) drivers—namely testosterone suppression 
+under different ADT schedules—to disease progression from hormone-sensitive prostate cancer to metastatic castration-resistant prostate cancer and to clinically relevant endpoints such as time to metastasis and prostate-cancer–specific mortality.
+
+Methods: We developed an integrative framework connecting mechanistic representations of disease biology to clinical outcomes. Its core is a mechanistic disease model describing prostate cancer cell proliferation and prostate-specific antigen (PSA) 
+production as functions of testosterone levels and downstream androgen receptor signaling. Adapted from Jain et al. [1], the model was calibrated using preclinical data from animal models [3,4], as well as clinical data from patients receiving continuous 
+or intermittent ADT [4]. The model captures adaptive disease dynamics underlying the transition from hormone-sensitive to castration-resistant states.
+This model is coupled with a statistical time-to-event model representing the bottleneck for metastasis formation in patients with localized hormone-sensitive prostate cancer. This component, adapted from Szczurek et al. [5], 
+was extended to incorporate disease-specific covariates, including baseline PSA and first-line treatment. Calibration leveraged individual-level SEER data [6] and summary-level clinical data [7] to quantify the relationship 
+between model-predicted PSA response and clinical endpoints.
+
+Results: The integrated QSP framework reproduces a broad range of preclinical and clinical observations. By combining patient-specific covariates — such as age, Gleason score, disease stage, baseline PSA, and first-line treatment — 
+with simulated PSA dynamics, the model predicts time to metastasis and prostate-cancer–specific mortality. Simulations characterize disease progression under alternative ADT schedules and degrees of testosterone suppression, 
+demonstrating improved outcomes with continuous versus intermittent ADT and with deep castration (testosterone <20 ng/mL) compared with non-deep castration (20–50 ng/mL).
+
+Conclusion: This QSP framework enables in silico evaluation of ADT strategies across preclinical and clinical contexts, providing mechanistic insight into how testosterone modulation influences disease progression and outcomes. 
+By integrating preclinical PD data with clinical disease and survival models, clinically relevant hypotheses can be explored even when investigational therapies remain at an early, preclinical stage, although prediction of 
+long-term outcomes may require further clinical validation.
+
+References: 
+[1] H.V. Jain, S.K. Clinton, A. Bhinder, & A. Friedman, Mathematical modeling of prostate cancer progression in response to androgen ablation therapy, Proc. Natl. Acad. Sci. U.S.A. 108 (49) 19701-19706, https://doi.org/10.1073/pnas.1115750108 (2011).
+[2] Wright, A. S., Thomas, L. N., Douglas, R. C., Lazier, C. B., & Rittmaster, R. S., Relative potency of testosterone and dihydrotestosterone in preventing atrophy and apoptosis in the prostate of the castrated rat. The Journal of clinical investigation, 98(11), 2558–2563. https://doi.org/10.1172/JCI119074 (1996)
+[3] Cheng, L., Zhang, S., Sweeney, C. J., Kao, C., Gardner, T. A., & Eble, J. N.,. Androgen withdrawal inhibits tumor growth and is associated with decrease in angiogenesis and VEGF expression in androgen-independent CWR22Rv1 human prostate cancer model. Anticancer research, 24(4), 2135–2140. (2004)
+[4] Claude Schulman et al., Intermittent Versus Continuous Androgen Deprivation Therapy in Patients with Relapsing or Locally Advanced Prostate Cancer: A Phase 3b Randomised Study (ICELAND). European Urology, 10.1016/j.eururo.2015.10.007 (2016)
+[5] Szczurek E, Krüger T, Klink B, Beerenwinkel N., A mathematical model of the metastatic bottleneck predicts patient outcome and response to cancer treatment. PLOS Computational Biology 16(10): e1008056. https://doi.org/10.1371/journal.pcbi.1008056 (2020)
+[6] Surveillance, Epidemiology, and End Results (SEER) Program (www.seer.cancer.gov) SEER*Stat Database: Incidence - SEER Research Data, 17 Registries, Nov 2024 Sub (2000-2022) - Linked to County Attributes - Time Dependent (1990-2023) Income/Rurality, 1969-2023 Counties, National Cancer Institute, DCCPS, Surveillance Research Program, released April 2025, based on the November 2024 submission.
+[7] Mihir Naik et al., Posttreatment Prostate-Specific Antigen 6 Months After Radiation With Androgen Deprivation Therapy Predicts for Distant Metastasis–Free Survival and Prostate Cancer–Specific Mortality. International Journal of Radiation Oncology*Biology*Physics, 10.1016/j.ijrobp.2016.07.009 (2016)
